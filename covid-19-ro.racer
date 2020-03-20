@@ -336,6 +336,14 @@
 (related  case45 Italy has-origin-of-infection)
 (related  case45 d15 has-confirmation-date) 
 
+(instance case39 (and Person (equal has-age 52)))
+(related case39 hospitalized has-status)
+(related case39 male has-gender)
+(related case39 Constanta has-detection-location)
+(related case39 unknownSourceContact has-source-of-infection)
+(related cas39 Romania has-origin-of-infection)
+(related case39 unknownForwardContact has-direct-contact)
+
 ;Rules box
 (define-rule (?x localTransmission has-source-of-infection)
   (and (?x Romania has-origin-of-infection)))
